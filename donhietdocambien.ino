@@ -3,8 +3,8 @@
 #include <DHT.h>
 
 // Thông tin WiFi
-const char* ssid = "Hieu 2G";
-const char* password = "";
+const char* ssid = "TOTOLINK_269c";
+const char* password = "1234567890";
 
 // Khai báo cảm biến DHT
 #define DHTPIN 4         // Chân GPIO kết nối DHT (ví dụ chân D4)
@@ -17,7 +17,7 @@ const char* serverName = "http://api.benhvienhuyencuchi.vn/api/theodoinhietdodoa
 
 // Thời gian gửi dữ liệu (đơn vị ms)
 unsigned long lastTime = 0;
-unsigned long timerDelay = 6000; // 60 giây
+unsigned long timerDelay = 600000;
 
 void setup() {
   Serial.begin(9600);
